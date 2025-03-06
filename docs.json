@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/docs/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -16,9 +16,9 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "/docs/introduction",
+              "/docs/quickstart",
+              "/docs/development"
             ]
           },
           {
