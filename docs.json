@@ -8,34 +8,18 @@
     "dark": "#00ff59"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "/docs/introduction",
-              "/docs/quickstart",
-              "/docs/development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "/docs/essentials/markdown",
-              "/docs/essentials/code",
-              "/docs/essentials/images",
-              "/docs/essentials/settings",
-              "/docs/essentials/navigation",
-              "/docs/essentials/reusable-snippets"
-            ]
-          }
-        ]
-      }
-
-    ],
+"navigation": {
+  "pages": [
+    "introduction",
+    "quickstart",
+    "development",
+    "essentials/markdown",
+    "essentials/code",
+    "essentials/images",
+    "essentials/settings",
+    "essentials/navigation",
+    "essentials/reusable-snippets"
+  ],
     "global": {
       "anchors": [
         {
