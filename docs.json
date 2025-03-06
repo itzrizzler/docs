@@ -16,7 +16,7 @@
             "group": "Get Started",
             "pages": [
               "/docs/introduction",
-              "/docs/qfuickstart",
+              "/docs/quickstart",
               "/docs/development"
             ]
           },
