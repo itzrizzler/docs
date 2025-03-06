@@ -1,77 +1,645 @@
-{
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#22C55E",
-    "light": "#07C983",
-    "dark": "#00ff59"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "groups": [
-      {
-        "group": "Get Started",
-        "pages": [
-          "/docs/introduction",
-          "/docs/quickstart",
-          "/docs/development"
-        ]
-      },
-      {
-        "group": "Essentials",
-        "pages": [
-          "/docs/essentials/markdown",
-          "/docs/essentials/code",
-          "/docs/essentials/images",
-          "/docs/essentials/settings",
-          "/docs/essentials/navigation",
-          "/docs/essentials/reusable-snippets"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  }
-}
+"$schema": "https://mintlify.com/docs.json",
+                        "theme": "mint",
+                        "name": "Fractal Docs",
+                        "colors": {
+                            "primary": "#6366f1",
+                            "light": "#6366f1",
+                            "dark": "#6366f1"
+                        },
+                        "favicon": "/logo/favicon.png",
+                        "navigation": {
+                            "anchors": [
+                                {
+                                    "anchor": "Documentation",
+                                    "icon": "book-open",
+                                    "groups": [
+                                        {
+                                            "group": "Welcome",
+                                            "pages": [
+                                                "introduction",
+                                                "quickstart"
+                                            ]
+                                        },
+                                        {
+                                            "group": "Panel",
+                                            "pages": [
+                                                "panel/overview",
+                                                "panel/importing-files",
+                                                "panel/sub-users"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "anchor": "Discord",
+                                    "href": "https://discord.gg/frac",
+                                    "icon": "discord"
+                                },
+                                {
+                                    "anchor": "Minecraft Guides",
+                                    "icon": "cubes",
+                                    "groups": [
+                                        {
+                                            "group": "Minecraft Guides",
+                                            "pages": [
+                                                "games/minecraft/introduction",
+                                                {
+                                                    "group": "Plugins",
+                                                    "pages": [
+                                                        "games/minecraft/plugins/chunky",
+                                                        "games/minecraft/plugins/dynmap",
+                                                        "games/minecraft/plugins/geyser",
+                                                        "games/minecraft/plugins/votifier"
+                                                    ]
+                                                },
+                                                {
+                                                    "group": "Common Errors",
+                                                    "pages": [
+                                                        "games/minecraft/common-errors/connection-timed-out",
+                                                        "games/minecraft/common-errors/exception-server-tick-loop",
+                                                        "games/minecraft/common-errors/failed-to-check-session-lock",
+                                                        "games/minecraft/common-errors/kicked-for-flying"
+                                                    ]
+                                                },
+                                                "games/minecraft/updating-jars",
+                                                "games/minecraft/server-icon",
+                                                "games/minecraft/installing-modpacks",
+                                                "games/minecraft/installing-mods",
+                                                "games/minecraft/changing-versions",
+                                                "games/minecraft/join-server",
+                                                "games/minecraft/setting-up-rcon",
+                                                "games/minecraft/convert-world",
+                                                "games/minecraft/convert-bedrock-to-java",
+                                                "games/minecraft/upload-world",
+                                                "games/minecraft/resource-packs",
+                                                "games/minecraft/aikars-flags"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "logo": {
+                            "light": "https://mintlify.s3-us-west-1.amazonaws.com/fractal-49123099/logo/light.png",
+                            "dark": "https://mintlify.s3-us-west-1.amazonaws.com/fractal-49123099/logo/dark.png"
+                        },
+                        "background": {
+                            "color": {
+                                "light": "#f7f7f7",
+                                "dark": "#060610"
+                            }
+                        },
+                        "navbar": {
+                            "links": [
+                                {
+                                    "label": "Contact",
+                                    "href": "https://frac.gg/contact"
+                                }
+                            ],
+                            "primary": {
+                                "type": "button",
+                                "label": "Join Fractal",
+                                "href": "https://frac.gg/auth"
+                            }
+                        },
+                        "footer": {
+                            "socials": {
+                                "website": "https://frac.gg/",
+                                "discord": "https://discord.gg/frac"
+                            }
+                        }
+                    },
+                    "pageMetadata": {
+                        "title": "Heliactyl",
+                        "description": "Developed by the team behind Fractal, Heliactyl is a next-generation game server panel (that's why it's called Heliactyl Next 3).",
+                        "sidebarTitle": "Overview",
+                        "icon": "window",
+                        "href": "/panel/overview"
+                    }
+                }
+            },
+            "mdxExtracts": {
+                "tableOfContents": [],
+                "codeExamples": {}
+            },
+            "description": {
+                "compiledSource": "\"use strict\";\nconst {jsx: _jsx} = arguments[0];\nconst {useMDXComponents: _provideComponents} = arguments[0];\nfunction _createMdxContent(props) {\n  const _components = {\n    p: \"p\",\n    ..._provideComponents(),\n    ...props.components\n  };\n  return _jsx(_components.p, {\n    children: \"Developed by the team behind Fractal, Heliactyl is a next-generation game server panel (that’s why it’s called Heliactyl Next 3).\"\n  });\n}\nfunction MDXContent(props = {}) {\n  const {wrapper: MDXLayout} = {\n    ..._provideComponents(),\n    ...props.components\n  };\n  return MDXLayout ? _jsx(MDXLayout, {\n    ...props,\n    children: _jsx(_createMdxContent, {\n      ...props\n    })\n  }) : _createMdxContent(props);\n}\nreturn {\n  default: MDXContent\n};\n",
+                "frontmatter": {},
+                "scope": {}
+            },
+            "pageData": {
+                "navWithMetadata": [
+                    {
+                        "group": "Welcome",
+                        "pages": [
+                            {
+                                "title": "Introduction",
+                                "description": "Fractal - From game servers to full-stack apps, deploy instantly in 6 global regions. Enterprise-grade infrastructure with no hidden costs - truly free forever.",
+                                "icon": "hand-wave",
+                                "href": "/introduction"
+                            },
+                            {
+                                "title": "Quickstart",
+                                "description": "Start playing your favourite game in minutes.",
+                                "icon": "rocket-launch",
+                                "href": "/quickstart"
+                            }
+                        ]
+                    },
+                    {
+                        "group": "Panel",
+                        "pages": [
+                            {
+                                "title": "Heliactyl",
+                                "description": "Developed by the team behind Fractal, Heliactyl is a next-generation game server panel (that's why it's called Heliactyl Next 3).",
+                                "sidebarTitle": "Overview",
+                                "icon": "window",
+                                "href": "/panel/overview"
+                            },
+                            {
+                                "title": "Importing files",
+                                "description": "We've included and built in several ways to upload your server's files or folders into the panel including SFTP and web upload.",
+                                "icon": "file-import",
+                                "href": "/panel/importing-files"
+                            },
+                            {
+                                "title": "Sub-users",
+                                "description": "Sub-users are users who have partial access to your server.",
+                                "icon": "users",
+                                "href": "/panel/sub-users"
+                            }
+                        ]
+                    },
+                    {
+                        "group": "Minecraft Guides",
+                        "pages": [
+                            {
+                                "title": "Hosting a Minecraft Server",
+                                "description": "This category contains extensive guides and how-to's on hosting a Minecraft server.",
+                                "sidebarTitle": "Introduction",
+                                "href": "/games/minecraft/introduction"
+                            },
+                            {
+                                "group": "Plugins",
+                                "pages": [
+                                    {
+                                        "title": "Chunky Plugin: Pre-Generating Your Minecraft Server World",
+                                        "description": "A guide to using Chunky to pre-generate your worlds; increase performance and reduce server lag.",
+                                        "sidebarTitle": "Chunky",
+                                        "tags": [
+                                            "chunky",
+                                            "pregen",
+                                            "pregeneration",
+                                            "pre-gen",
+                                            "pre-generation",
+                                            "performance",
+                                            "lag",
+                                            "minecraft",
+                                            "minecraft server",
+                                            "optimize server",
+                                            "plugin",
+                                            "mod"
+                                        ],
+                                        "href": "/games/minecraft/plugins/chunky"
+                                    },
+                                    {
+                                        "title": "How to Configure and Use Dynmap on a Minecraft Server",
+                                        "description": "Dynmap is a Minecraft plugin to create and view a live map of your Minecraft server world.",
+                                        "sidebarTitle": "Dynmap",
+                                        "href": "/games/minecraft/plugins/dynmap"
+                                    },
+                                    {
+                                        "title": "GeyserMC: Allow cross-play between Java and Bedrock players for your Minecraft server",
+                                        "description": "A guide for using GeyserMC and Floodgate to allow cross-play between Java and Bedrock players and let them connect to your Java Minecraft server.",
+                                        "sidebarTitle": "GeyserMC / Floodgate",
+                                        "tags": [
+                                            "geysermc",
+                                            "floodgate",
+                                            "cross-play",
+                                            "cross-platform",
+                                            "java-and-bedrock",
+                                            "paper"
+                                        ],
+                                        "href": "/games/minecraft/plugins/geyser"
+                                    },
+                                    {
+                                        "title": "How to Install and Configure Votifier on Your Minecraft Server",
+                                        "description": "A guide for using Votifier (NuVotifier) to add voting, configuring rewards, and more to your Minecraft server with voting sites.",
+                                        "sidebarTitle": "Votifier",
+                                        "tags": [
+                                            "votifier",
+                                            "voting",
+                                            "minecraft",
+                                            "paper",
+                                            "nuvotifier",
+                                            "rewards",
+                                            "vote-forwarding"
+                                        ],
+                                        "href": "/games/minecraft/plugins/votifier"
+                                    }
+                                ]
+                            },
+                            {
+                                "group": "Common Errors",
+                                "pages": [
+                                    {
+                                        "title": "How to Fix 'Server Connection Timed Out' Error in Minecraft",
+                                        "description": "Learn how to fix connection timeout error while playing on a Minecraft Server.",
+                                        "sidebarTitle": "Connection timed out",
+                                        "href": "/games/minecraft/common-errors/connection-timed-out"
+                                    },
+                                    {
+                                        "title": "How to Fix 'Exception Server Tick Loop' Error in Minecraft",
+                                        "description": "A .json file likely may have become corrupted. This guide shows you how to fix this common error server owners face for a Minecraft server.",
+                                        "sidebarTitle": "Exception server tick loop",
+                                        "href": "/games/minecraft/common-errors/exception-server-tick-loop"
+                                    },
+                                    {
+                                        "title": "How to Fix 'Failed to check session lock' Error in Minecraft",
+                                        "description": "A guide on how to fix the session lock error for Minecraft servers.",
+                                        "sidebarTitle": "Failed to check session lock",
+                                        "href": "/games/minecraft/common-errors/failed-to-check-session-lock"
+                                    },
+                                    {
+                                        "title": "How to Disable 'Kicked for Flying' Error in Minecraft",
+                                        "description": "A guide on how to disable the 'Flying is not enabled on this server' error message on a Minecraft server.",
+                                        "sidebarTitle": "Kicked for flying",
+                                        "href": "/games/minecraft/common-errors/kicked-for-flying"
+                                    }
+                                ]
+                            },
+                            {
+                                "title": "How to Update a Minecraft Server",
+                                "description": "A guide to updating the server software on your Minecraft server (Paper, Spigot, Forge, etc).",
+                                "sidebarTitle": "Updating server",
+                                "href": "/games/minecraft/updating-jars"
+                            },
+                            {
+                                "title": "How to Set a Custom Minecraft Server Icon",
+                                "description": "A guide on adding and setting a custom server icon in the Minecraft server list.",
+                                "sidebarTitle": "Add custom server icon",
+                                "href": "/games/minecraft/server-icon"
+                            },
+                            {
+                                "title": "How to Install Modpacks on Your Minecraft Server",
+                                "description": "Learn how to install any Forge or custom modpacks on your Minecraft server.",
+                                "sidebarTitle": "Install modpacks",
+                                "href": "/games/minecraft/installing-modpacks"
+                            },
+                            {
+                                "title": "How to Install Mods on Your Minecraft Server",
+                                "description": "Learn how to install any Forge or Fabric mod on a Minecraft server.",
+                                "sidebarTitle": "Install mods",
+                                "href": "/games/minecraft/installing-mods"
+                            },
+                            {
+                                "title": "Changing your Minecraft Server Version",
+                                "description": "A guide to changing the server verison or type of your Minecraft server. You have full control over the type and the version of your server that you can change that at any time!",
+                                "sidebarTitle": "Changing Minecraft versions",
+                                "href": "/games/minecraft/changing-versions"
+                            },
+                            {
+                                "title": "How to Join a Minecraft Server on Java and Bedrock",
+                                "description": "A guide on how to join a Minecraft server on both Java and Bedrock Edition.",
+                                "sidebarTitle": "Join Minecraft server",
+                                "href": "/games/minecraft/join-server"
+                            },
+                            {
+                                "title": "How to Setup RCON on Your Minecraft Server",
+                                "description": "A guide on how to join a Minecraft server on both Java and Bedrock Edition.",
+                                "sidebarTitle": "Enable and setup RCON",
+                                "href": "/games/minecraft/setting-up-rcon"
+                            },
+                            {
+                                "title": "Chunker: Convert Minecraft World Between Java and Bedrock",
+                                "description": "How to use Chunker.app to convert your Minecraft world between Java and Bedrock.",
+                                "sidebarTitle": "Converting Minecraft world",
+                                "tags": [
+                                    "minecraft",
+                                    "convert world",
+                                    "bedrock",
+                                    "java",
+                                    "chunker",
+                                    "java to bedrock",
+                                    "bedrock to java",
+                                    "world converter"
+                                ],
+                                "href": "/games/minecraft/convert-world"
+                            },
+                            {
+                                "title": "Chunker: Convert a Bedrock World to Java Edition",
+                                "description": "How to use Chunker to convert your Minecraft Bedrock world to Java Edition.",
+                                "sidebarTitle": "Convert Bedrock world to Java",
+                                "tags": [
+                                    "minecraft",
+                                    "convert world",
+                                    "bedrock",
+                                    "java",
+                                    "chunker",
+                                    "bedrock to java",
+                                    "world converter"
+                                ],
+                                "href": "/games/minecraft/convert-bedrock-to-java"
+                            },
+                            {
+                                "title": "How to Upload and use a Custom World on Your Minecraft Server",
+                                "description": "Learn how to upload custom and singleplayer worlds to your Minecraft server.",
+                                "sidebarTitle": "Upload a world",
+                                "href": "/games/minecraft/upload-world"
+                            },
+                            {
+                                "title": "Adding Resource Packs to a Minecraft Server",
+                                "description": "Learn how to host and configure a resource pack for your Minecraft Server.",
+                                "sidebarTitle": "Adding resource packs",
+                                "href": "/games/minecraft/resource-packs"
+                            },
+                            {
+                                "title": "Optimizing Minecraft Servers with Aikar's Flags",
+                                "description": "A guide to using Aikar's flags to optimize the performance of your Minecraft server.",
+                                "sidebarTitle": "Aikar's Flags",
+                                "href": "/games/minecraft/aikars-flags"
+                            }
+                        ]
+                    }
+                ],
+                "docsNavWithMetadata": {
+                    "anchors": [
+                        {
+                            "anchor": "Documentation",
+                            "icon": "book-open",
+                            "groups": [
+                                {
+                                    "group": "Welcome",
+                                    "pages": [
+                                        {
+                                            "title": "Introduction",
+                                            "description": "Fractal - From game servers to full-stack apps, deploy instantly in 6 global regions. Enterprise-grade infrastructure with no hidden costs - truly free forever.",
+                                            "icon": "hand-wave",
+                                            "href": "/introduction"
+                                        },
+                                        {
+                                            "title": "Quickstart",
+                                            "description": "Start playing your favourite game in minutes.",
+                                            "icon": "rocket-launch",
+                                            "href": "/quickstart"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "Panel",
+                                    "pages": [
+                                        {
+                                            "title": "Heliactyl",
+                                            "description": "Developed by the team behind Fractal, Heliactyl is a next-generation game server panel (that's why it's called Heliactyl Next 3).",
+                                            "sidebarTitle": "Overview",
+                                            "icon": "window",
+                                            "href": "/panel/overview"
+                                        },
+                                        {
+                                            "title": "Importing files",
+                                            "description": "We've included and built in several ways to upload your server's files or folders into the panel including SFTP and web upload.",
+                                            "icon": "file-import",
+                                            "href": "/panel/importing-files"
+                                        },
+                                        {
+                                            "title": "Sub-users",
+                                            "description": "Sub-users are users who have partial access to your server.",
+                                            "icon": "users",
+                                            "href": "/panel/sub-users"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "anchor": "Discord",
+                            "href": "https://discord.gg/frac",
+                            "icon": "discord"
+                        },
+                        {
+                            "anchor": "Minecraft Guides",
+                            "icon": "cubes",
+                            "groups": [
+                                {
+                                    "group": "Minecraft Guides",
+                                    "pages": [
+                                        {
+                                            "title": "Hosting a Minecraft Server",
+                                            "description": "This category contains extensive guides and how-to's on hosting a Minecraft server.",
+                                            "sidebarTitle": "Introduction",
+                                            "href": "/games/minecraft/introduction"
+                                        },
+                                        {
+                                            "group": "Plugins",
+                                            "pages": [
+                                                {
+                                                    "title": "Chunky Plugin: Pre-Generating Your Minecraft Server World",
+                                                    "description": "A guide to using Chunky to pre-generate your worlds; increase performance and reduce server lag.",
+                                                    "sidebarTitle": "Chunky",
+                                                    "tags": [
+                                                        "chunky",
+                                                        "pregen",
+                                                        "pregeneration",
+                                                        "pre-gen",
+                                                        "pre-generation",
+                                                        "performance",
+                                                        "lag",
+                                                        "minecraft",
+                                                        "minecraft server",
+                                                        "optimize server",
+                                                        "plugin",
+                                                        "mod"
+                                                    ],
+                                                    "href": "/games/minecraft/plugins/chunky"
+                                                },
+                                                {
+                                                    "title": "How to Configure and Use Dynmap on a Minecraft Server",
+                                                    "description": "Dynmap is a Minecraft plugin to create and view a live map of your Minecraft server world.",
+                                                    "sidebarTitle": "Dynmap",
+                                                    "href": "/games/minecraft/plugins/dynmap"
+                                                },
+                                                {
+                                                    "title": "GeyserMC: Allow cross-play between Java and Bedrock players for your Minecraft server",
+                                                    "description": "A guide for using GeyserMC and Floodgate to allow cross-play between Java and Bedrock players and let them connect to your Java Minecraft server.",
+                                                    "sidebarTitle": "GeyserMC / Floodgate",
+                                                    "tags": [
+                                                        "geysermc",
+                                                        "floodgate",
+                                                        "cross-play",
+                                                        "cross-platform",
+                                                        "java-and-bedrock",
+                                                        "paper"
+                                                    ],
+                                                    "href": "/games/minecraft/plugins/geyser"
+                                                },
+                                                {
+                                                    "title": "How to Install and Configure Votifier on Your Minecraft Server",
+                                                    "description": "A guide for using Votifier (NuVotifier) to add voting, configuring rewards, and more to your Minecraft server with voting sites.",
+                                                    "sidebarTitle": "Votifier",
+                                                    "tags": [
+                                                        "votifier",
+                                                        "voting",
+                                                        "minecraft",
+                                                        "paper",
+                                                        "nuvotifier",
+                                                        "rewards",
+                                                        "vote-forwarding"
+                                                    ],
+                                                    "href": "/games/minecraft/plugins/votifier"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "group": "Common Errors",
+                                            "pages": [
+                                                {
+                                                    "title": "How to Fix 'Server Connection Timed Out' Error in Minecraft",
+                                                    "description": "Learn how to fix connection timeout error while playing on a Minecraft Server.",
+                                                    "sidebarTitle": "Connection timed out",
+                                                    "href": "/games/minecraft/common-errors/connection-timed-out"
+                                                },
+                                                {
+                                                    "title": "How to Fix 'Exception Server Tick Loop' Error in Minecraft",
+                                                    "description": "A .json file likely may have become corrupted. This guide shows you how to fix this common error server owners face for a Minecraft server.",
+                                                    "sidebarTitle": "Exception server tick loop",
+                                                    "href": "/games/minecraft/common-errors/exception-server-tick-loop"
+                                                },
+                                                {
+                                                    "title": "How to Fix 'Failed to check session lock' Error in Minecraft",
+                                                    "description": "A guide on how to fix the session lock error for Minecraft servers.",
+                                                    "sidebarTitle": "Failed to check session lock",
+                                                    "href": "/games/minecraft/common-errors/failed-to-check-session-lock"
+                                                },
+                                                {
+                                                    "title": "How to Disable 'Kicked for Flying' Error in Minecraft",
+                                                    "description": "A guide on how to disable the 'Flying is not enabled on this server' error message on a Minecraft server.",
+                                                    "sidebarTitle": "Kicked for flying",
+                                                    "href": "/games/minecraft/common-errors/kicked-for-flying"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "title": "How to Update a Minecraft Server",
+                                            "description": "A guide to updating the server software on your Minecraft server (Paper, Spigot, Forge, etc).",
+                                            "sidebarTitle": "Updating server",
+                                            "href": "/games/minecraft/updating-jars"
+                                        },
+                                        {
+                                            "title": "How to Set a Custom Minecraft Server Icon",
+                                            "description": "A guide on adding and setting a custom server icon in the Minecraft server list.",
+                                            "sidebarTitle": "Add custom server icon",
+                                            "href": "/games/minecraft/server-icon"
+                                        },
+                                        {
+                                            "title": "How to Install Modpacks on Your Minecraft Server",
+                                            "description": "Learn how to install any Forge or custom modpacks on your Minecraft server.",
+                                            "sidebarTitle": "Install modpacks",
+                                            "href": "/games/minecraft/installing-modpacks"
+                                        },
+                                        {
+                                            "title": "How to Install Mods on Your Minecraft Server",
+                                            "description": "Learn how to install any Forge or Fabric mod on a Minecraft server.",
+                                            "sidebarTitle": "Install mods",
+                                            "href": "/games/minecraft/installing-mods"
+                                        },
+                                        {
+                                            "title": "Changing your Minecraft Server Version",
+                                            "description": "A guide to changing the server verison or type of your Minecraft server. You have full control over the type and the version of your server that you can change that at any time!",
+                                            "sidebarTitle": "Changing Minecraft versions",
+                                            "href": "/games/minecraft/changing-versions"
+                                        },
+                                        {
+                                            "title": "How to Join a Minecraft Server on Java and Bedrock",
+                                            "description": "A guide on how to join a Minecraft server on both Java and Bedrock Edition.",
+                                            "sidebarTitle": "Join Minecraft server",
+                                            "href": "/games/minecraft/join-server"
+                                        },
+                                        {
+                                            "title": "How to Setup RCON on Your Minecraft Server",
+                                            "description": "A guide on how to join a Minecraft server on both Java and Bedrock Edition.",
+                                            "sidebarTitle": "Enable and setup RCON",
+                                            "href": "/games/minecraft/setting-up-rcon"
+                                        },
+                                        {
+                                            "title": "Chunker: Convert Minecraft World Between Java and Bedrock",
+                                            "description": "How to use Chunker.app to convert your Minecraft world between Java and Bedrock.",
+                                            "sidebarTitle": "Converting Minecraft world",
+                                            "tags": [
+                                                "minecraft",
+                                                "convert world",
+                                                "bedrock",
+                                                "java",
+                                                "chunker",
+                                                "java to bedrock",
+                                                "bedrock to java",
+                                                "world converter"
+                                            ],
+                                            "href": "/games/minecraft/convert-world"
+                                        },
+                                        {
+                                            "title": "Chunker: Convert a Bedrock World to Java Edition",
+                                            "description": "How to use Chunker to convert your Minecraft Bedrock world to Java Edition.",
+                                            "sidebarTitle": "Convert Bedrock world to Java",
+                                            "tags": [
+                                                "minecraft",
+                                                "convert world",
+                                                "bedrock",
+                                                "java",
+                                                "chunker",
+                                                "bedrock to java",
+                                                "world converter"
+                                            ],
+                                            "href": "/games/minecraft/convert-bedrock-to-java"
+                                        },
+                                        {
+                                            "title": "How to Upload and use a Custom World on Your Minecraft Server",
+                                            "description": "Learn how to upload custom and singleplayer worlds to your Minecraft server.",
+                                            "sidebarTitle": "Upload a world",
+                                            "href": "/games/minecraft/upload-world"
+                                        },
+                                        {
+                                            "title": "Adding Resource Packs to a Minecraft Server",
+                                            "description": "Learn how to host and configure a resource pack for your Minecraft Server.",
+                                            "sidebarTitle": "Adding resource packs",
+                                            "href": "/games/minecraft/resource-packs"
+                                        },
+                                        {
+                                            "title": "Optimizing Minecraft Servers with Aikar's Flags",
+                                            "description": "A guide to using Aikar's flags to optimize the performance of your Minecraft server.",
+                                            "sidebarTitle": "Aikar's Flags",
+                                            "href": "/games/minecraft/aikars-flags"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "pageMetadata": {
+                    "title": "Heliactyl",
+                    "description": "Developed by the team behind Fractal, Heliactyl is a next-generation game server panel (that's why it's called Heliactyl Next 3).",
+                    "sidebarTitle": "Overview",
+                    "icon": "window",
+                    "href": "/panel/overview"
+                },
+                "mintConfig": {
+                    "layout": "topnav",
+                    "sidebar": {
+                        "items": "container"
+                    },
+                    "topbar": {
+                        "style": "default"
+                    },
+                    "search": {
+                        "location": "top"
+                    },
+                    "rounded": "default",
+                    "codeBlock": {
+                        "mode": "dark"
+                    },
+                    "topbarCtaButton": {
+                        "name": "Join Fractal",
+                        "url": "https://frac.gg/auth",
+                        "style": "pill",
+                        "arrow": true
+                    }
